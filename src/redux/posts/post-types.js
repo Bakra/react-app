@@ -1,0 +1,7 @@
+const PostsActionTypes = {
+    FETCH_ALL_POSTS: "FETCH_ALL_POSTS",
+    FETCH_ALL_POSTS_SUCCESS: "FETCH_ALL_POSTS_SUCCESS",
+    FETCH_ALL_POSTS_FAILURE: "FETCH_ALL_POSTS_FAILURE"
+}
+
+export default PostsActionTypes;
