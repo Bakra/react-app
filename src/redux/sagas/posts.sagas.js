@@ -22,7 +22,7 @@ export function* postsSaga() {
 }
 
 async function fetchAllPosts() {
-    const response = await fetch('https://jsonplaceholder.typicode.com/posts').then(res => res.json()).catch(error => {
+    const response = await fetch('http://my-json-server.typicode.com/Bakra/react-app/items').then(res => res.json()).catch(error => {
         return null;
     });
     return response;

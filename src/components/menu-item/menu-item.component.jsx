@@ -5,9 +5,9 @@ import { withRouter } from 'react-router-dom'
 import './menu-item.styles.scss';
 
 const MenuItem = ({ title, imageUrl, history, linkUrl, match }) => (
-    <div style={{
-        backgroundImage: `url(${imageUrl})`
-    }} className='menu-item' onClick={() => history.push(linkUrl)}>
+    <div style={{ backgroundImage: `url(${imageUrl})` }} 
+    className='menu-item' 
+    onClick={() => history.push(linkUrl)}>
         <div className='content'>
             <h1 className='title'>{title.toUpperCase()}</h1>
             <span className='subtitle'>SHOP NOW</span>

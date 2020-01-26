@@ -20,25 +20,25 @@ class Directory extends Component {
                     title: 'jackets',
                     imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
                     id: 2,
-                    linkUrl: '/hats'
+                    linkUrl: '/jackets'
                 },
                 {
                     title: 'sneakers',
                     imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
                     id: 3,
-                    linkUrl: '/hats'
+                    linkUrl: '/sneakers'
                 },
                 {
                     title: 'mens',
                     imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
                     id: 4,
-                    linkUrl: '/hats'
+                    linkUrl: '/mens'
                 },
                 {
                     title: 'womens',
                     imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
                     id: 5,
-                    linkUrl: '/hats'
+                    linkUrl: '/womens'
                 }
             ]
         }
