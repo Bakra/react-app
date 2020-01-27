@@ -7,12 +7,12 @@ import PostsActionTypes from '../../redux/posts/post-types';
 const hats = ({ hatsItems, fetchAllPosts }) => (
     
     <div>
-        <button onClick={ fetchAllPosts }>Fetch clothes</button>
+        <button onClick={ fetchAllPosts }>Show hats</button>
         <div className="main-container">
         { 
             hatsItems.map((hat) => 
                 <div className="container" key={hat.id}>
-                        <div><img alt="" width="200" height="250" src={`${hat.imageUrl}`}/></div>
+                        <div><img alt="" width="100" height="100" src={`${hat.imageUrl}`}/></div>
                         <div>{hat.name}</div> 
                 </div>
         )}
@@ -21,6 +21,8 @@ const hats = ({ hatsItems, fetchAllPosts }) => (
 
     </div>
 );
+
+
 
 const mapStateToProps = state => ({
     hatsItems : state.posts.allPosts
