@@ -1,13 +1,13 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import '../hats/hats.styles.scss'
-import PostsActionTypes from '../../redux/posts/post-types';
+import HatsActionTypes from '../../redux/hats/hats-types';
 
 
-const hats = ({ hatsItems, fetchAllPosts }) => (
+const hats = ({ hatsItems, fetchAllHats }) => (
     
     <div>
-        <button onClick={ fetchAllPosts }>Show hats</button>
+        <button onClick={ fetchAllHats }>Show hats</button>
         <div className="main-container">
         { 
             hatsItems.map((hat) => 
@@ -25,11 +25,11 @@ const hats = ({ hatsItems, fetchAllPosts }) => (
 
 
 const mapStateToProps = state => ({
-    hatsItems : state.posts.allPosts
+    hatsItems : state.hats.allHats
 });
 
 const mapDispatchToProps = dispatch => ({
-        fetchAllPosts: () => dispatch({ type: PostsActionTypes.FETCH_ALL_POSTS })
+        fetchAllHats: () => dispatch({ type: HatsActionTypes.FETCH_ALL_HATS })
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(hats);

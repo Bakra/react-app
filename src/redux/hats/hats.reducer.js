@@ -1,18 +1,18 @@
-import PostsActionTypes from "./post-types"
+import HatsActionTypes from "./hats-types"
 
 const INITIAL_STATE = {
-    allPosts: [],
+    allHats: [],
     errorMessage: null
 }
 
-export default function postsReducer (state = INITIAL_STATE, action) {
+export default function hatsReducer (state = INITIAL_STATE, action) {
     switch (action.type) {
-        case PostsActionTypes.FETCH_ALL_POSTS_SUCCESS:
+        case HatsActionTypes.FETCH_ALL_HATS_SUCCESS:
             return {
                 ...state,
-                allPosts: action.payload
+                allHats: action.payload
             }
-        case PostsActionTypes.FETCH_ALL_POSTS_FAILURE:
+        case HatsActionTypes.FETCH_ALL_HATS_FAILURE:
             return {
                 ...state,
                 errorMessage: action.payload
