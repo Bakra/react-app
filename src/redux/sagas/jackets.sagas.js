@@ -23,7 +23,7 @@ export function* jacketsSaga () {
 }
 
 async function fetchAllJackets() {
-    const response = await fetch('http://my-json-server.typicode.com/Bakra/react-app/items').then(res => res.json()).catch(error => {
+    const response = await fetch('http://my-json-server.typicode.com/Bakra/react-app/jackets').then(res => res.json()).catch(error => {
         return null;
     });
     return response;
